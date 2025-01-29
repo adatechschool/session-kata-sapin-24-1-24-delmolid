@@ -6,7 +6,7 @@ let barre = '|';
 function afficherEtoiles(n){
 let etoile = '*'; 
 if(n !== undefined){
-   let resultat =  ".".repeat(n) + etoile.repeat(n) 
+   let resultat =  etoile.repeat(n) 
    console.log(resultat);
 }
 } 
@@ -42,16 +42,19 @@ function afficherTriangleDroite(n) {
     }
   }
   
-//   afficherTriangleDroite(5)
+  afficherTriangleDroite(5)
 
 
 
    function afficherTriangleGauche(n) {
     if (n !== undefined) {
-      for (let i = 1; i <= n; i++) {
+      for (let i = 0; i < n; i++) {
         const espaces = " ".repeat(n - i); // Ajoute les espaces nécessaires pour aligner les étoiles à droite
         const etoiles = "*".repeat(i);    // Ajoute les étoiles pour la ligne actuelle
         console.log(espaces + etoiles);   // Combine espaces et étoiles
+        
+    
+
       }
     }
   }
